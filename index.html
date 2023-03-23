@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+    <header>
+        <link href="weather.css" rel="stylesheet"/>
+        <script type="text/javascript" src="weather.js"></script>
+        <script src="https://kit.fontawesome.com/73ee127a71.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    </header>
+
+    <body>
+
+        <lord-icon class="cloud cloud1"
+            src="https://cdn.lordicon.com/qrodhbts.json"
+            trigger="loop"
+            delay="800"
+            colors="primary:#e6f5ff"
+            style="width:250px;height:250px">
+        </lord-icon>
+
+        <lord-icon class="cloud cloud2"
+            src="https://cdn.lordicon.com/qrodhbts.json"
+            trigger="loop"
+            delay="800"
+            colors="primary:#e6f5ff"
+            style="width:350px;height:350px">
+        </lord-icon>
+
+        <div class="wrap">
+
+            <div class="outsideContainer">
+
+                <div class="insideContainer">
+
+                    <div class="left">
+                        <div class="heading height5">TODAY</div>
+                        <div class="temp"><p>10°C</p></div>
+                        <div class="height5">Thursday, 03/23/23</div>
+                        <div class="height5 lowHigh">
+                            <div>L: 10°C</div>
+                            <div class="betweenLH">&nbsp;</div>
+                            <div>H: 20°C</div>
+                        </div>
+                        <div class="toronto">Toronto, ON</div>
+                    </div>
+
+                    <div class="right">
+                        <div class="heading height5">TODAY'S HIGHLIGHTS</div>
+                        
+                        <div class="rightTop">
+                            <div class="rightTop1">
+                                <div class="hlSquare">Feels Like </div>
+                                <div class="hlSquare">Condition</div>
+                                <div class="hlSquare">Humidity</div>
+                            </div>
+                            <div class="rightTop1">
+                                <div class="hlSquare">Wind Speed</div>
+                                <div class="hlSquare">Visibility</div>
+                                <div class="hlSquare">Sunset & Sunrise</div>
+                            </div>
+                        </div>
+                        
+                        <div class="heading height5">HOURLY</div>
+                        
+                        <div class="rightBottom">
+                            <div class="rightBottom1">
+                                <div class="hourSquare">
+                                    <div>Morning</div>
+                                    <div class="b morning"><i class="fa-solid fa-cloud-sun"></i></div>
+                                </div>
+                                <div class="hourSquare">
+                                    <div>Noon</div>
+                                    <div class="b noon"><i class="fa-solid fa-sun"></i></div>
+                                </div>
+                                <div class="hourSquare">
+                                    <div>Evening</div>
+                                    <div class="b evening"><i class="fa-solid fa-cloud-moon"></i></div>
+                                </div>
+                                <div class="hourSquare">
+                                    <div>Night</div>
+                                    <div class="b night"><i class="fa-solid fa-moon"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>    
+                </div>
+
+            </div>      
+        </div>
+
+    </body>
+
+</html>

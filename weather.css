@@ -1,0 +1,179 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-size: 20px;
+    background-color: rgb(217, 217, 217);
+}
+
+.wrap {
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    min-width: 1440px;
+}
+
+.heading {
+    font-weight: 700;
+}
+
+.outsideContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.insideContainer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 33%;
+    height: 70%;
+    background-color: rgb(204, 235, 255);
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    padding: 35px;
+}
+
+.right {
+    width: 67%;
+    height: 70%;
+    background-color: rgb(242, 242, 242);
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    padding: 35px;
+}
+
+.cloud {
+    position: fixed;
+    z-index: 1;
+}
+
+.cloud1 {
+    transform: translate(-15px, 144px);
+    animation: move 15s linear 0s infinite;
+}
+
+.cloud2 {
+    transform: translate(1650px, 550px);
+    animation: move2 8s linear 0s infinite;
+}
+
+@keyframes move {
+    0% {
+      transform: translate(-300PX ,0);
+    }
+    100% {
+      transform: translate(1920px,0);
+    }
+}
+
+@keyframes move2 {
+    0% {
+      transform: translate(1900px, 550px);
+    }
+    100% {
+      transform: translate(-500px, 550px);
+    }
+}
+
+.height5 {
+    height: 5%;
+}
+
+
+.temp {
+    height: 60%;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowHigh {
+    display: flex;
+}
+
+.toronto {
+    display: flex;
+    height: 25%;
+    align-items: end;
+    font-size: 35px;
+}
+
+.rightTop {
+    height: 60%;
+}
+
+.rightBottom {
+    height: 30%;
+}
+
+.betweenLH {
+    width: 30px;
+}
+
+.hlSquare {
+    background-color: white;
+    width: 192px;
+    height: 137px;
+    padding: 20px;
+    border-radius: 1em;
+    font-size: 15px;
+    color: rgb(191, 191, 191);
+    font-weight: 700;
+}
+
+.rightTop1 {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rightBottom1 {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hourSquare {
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 1em;
+    font-size: 15px;
+    color: rgb(191, 191, 191);
+    font-weight: 700;
+}
+
+.b {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+}
+
+.morning {
+    color: rgb(255, 224, 102);
+}
+
+.noon {
+    color: rgb(255, 204, 102);
+}
+
+.evening {
+    color: rgb(45, 89, 134);
+}
+
+.night {
+    color: rgb(61, 61, 92);
+}
