@@ -32,18 +32,31 @@
 
         <div class="wrap">
 
-            <div class="outsideContainer">
+            <div class="loading" id="load">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="outsideContainer hide" id="weatherApp">
 
                 <div class="insideContainer">
 
                     <div class="left">
                         <div class="heading height5">TODAY</div>
-                        <div class="temp"><p>10°C</p></div>
-                        <div class="height5">Thursday, 03/23/23</div>
+                        <div class="temp">
+                            <p>
+                                <span id="tempNow"></span>°C
+                            </p>
+                        </div>
+                        <div class="height5" id="date"></div>
                         <div class="height5 lowHigh">
-                            <div>L: 10°C</div>
+                            <div>L: <span id="lowTemp"></span>°C</div>
                             <div class="betweenLH">&nbsp;</div>
-                            <div>H: 20°C</div>
+                            <div>H: <span id="highTemp"></span>°C</div>
                         </div>
                         <div class="toronto">Toronto, ON</div>
                     </div>
@@ -51,16 +64,42 @@
                     <div class="right">
                         <div class="heading height5">TODAY'S HIGHLIGHTS</div>
                         
-                        <div class="rightTop">
+                        
+                        <div class="rightTop" id="rT">
                             <div class="rightTop1">
-                                <div class="hlSquare">Feels Like </div>
-                                <div class="hlSquare">Condition</div>
-                                <div class="hlSquare">Humidity</div>
+                                <div class="hlSquare">Feels Like
+                                    <div class="hlSquareFormat">
+                                        <div class="hlFonts"><span id="FL"></span>°C</div>
+                                    </div>
+                                </div>
+                                <div class="hlSquare">Condition
+                                    <div class="hlSquareFormat">
+                                        <div class="hlFonts"><span id="condition"></span></div>
+                                    </div>
+                                </div>
+                                <div class="hlSquare">Humidity
+                                    <div class="hlSquareFormat">
+                                        <div class="hlFonts"><span id="humidity"></span></div>
+                                    </div>
+                                </div>
                             </div>
+                            
                             <div class="rightTop1">
-                                <div class="hlSquare">Wind Speed</div>
-                                <div class="hlSquare">Visibility</div>
-                                <div class="hlSquare">Sunset & Sunrise</div>
+                                <div class="hlSquare">Wind Speed
+                                    <div class="hlSquareFormat">
+                                        <div class="hlFonts"><span id="windSpeed"></span></div>
+                                    </div>
+                                </div>
+                                <div class="hlSquare">Visibility
+                                    <div class="hlSquareFormat">
+                                        <div class="hlFonts"><span id="visibility"></span></div>
+                                    </div>
+                                </div>
+                                <div class="hlSquare">Sunset & Sunrise
+                                    <div class="hlSquareFormat">
+                                        <div class="hlFonts"><div id="sunRise"></div><div id="sunSet"></div></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -71,18 +110,22 @@
                                 <div class="hourSquare">
                                     <div>Morning</div>
                                     <div class="b morning"><i class="fa-solid fa-cloud-sun"></i></div>
+                                    <div id="am1" class="hrFonts"></div>
                                 </div>
                                 <div class="hourSquare">
                                     <div>Noon</div>
                                     <div class="b noon"><i class="fa-solid fa-sun"></i></div>
+                                    <div id="am2" class="hrFonts"></div>
                                 </div>
                                 <div class="hourSquare">
                                     <div>Evening</div>
                                     <div class="b evening"><i class="fa-solid fa-cloud-moon"></i></div>
+                                    <div id="pm1" class="hrFonts"></div>
                                 </div>
                                 <div class="hourSquare">
                                     <div>Night</div>
                                     <div class="b night"><i class="fa-solid fa-moon"></i></div>
+                                    <div id="pm2" class="hrFonts"></div>
                                 </div>
                             </div>
                         </div>
