@@ -195,8 +195,6 @@ body {
 }
 
 .hrFonts {
-    text-align: center;
-    margin-top: 10px;
     color: black;
 }
 
@@ -215,25 +213,6 @@ body {
     display: flex;
 }
 
-  
-/*.circle {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: white;
-    animation: go 500ms linear 0ms infinite;
-    margin-right: 30px;
-}
-
-@keyframes go {
-    from {
-      transform: translateX(0px);
-    }
-    to {
-      transform: translateX(45px);
-    }
-  }
-*/
 
 .lds-ellipsis {
     display: inline-block;
@@ -291,3 +270,11 @@ body {
     }
   }
   
+  .hrlyInfo {
+    justify-content: center;
+    display: flex;
+  }
+
+  .centerText {
+    text-align: center;
+  }

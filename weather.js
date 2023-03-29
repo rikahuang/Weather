@@ -36,7 +36,7 @@ function showWeatherInfo(info) {
     var fl = document.getElementById("FL");
     fl.innerHTML = currentCondition.FeelsLikeC;
 
-    var con = document.getElementById("condition");
+    var con = document.getElementById("condition1");
     con.innerHTML = currentCondition.weatherDesc[0].value;
 
     var hum = document.getElementById("humidity");
@@ -71,6 +71,18 @@ function showWeatherInfo(info) {
 
    var evening9 = document.getElementById("pm2");
    evening9.innerHTML = wtr.hourly[7].tempC + "°C";
+
+   var rain6 = document.getElementById("rain6");
+   rain6.innerHTML = wtr.hourly[2].chanceofrain + "%";
+
+   var rain12 = document.getElementById("rain12");
+   rain12.innerHTML = wtr.hourly[4].chanceofrain + "%";
+
+   var rain6pm = document.getElementById("rain6pm");
+   rain6pm.innerHTML = wtr.hourly[6].chanceofrain + "%";
+
+   var rain9pm = document.getElementById("rain9pm");
+   rain9pm.innerHTML = wtr.hourly[7].chanceofrain + "%";
 }
 
 function showDate() {
