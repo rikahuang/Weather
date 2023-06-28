@@ -334,7 +334,7 @@ body {
 
   .left {
     width: 90%;
-    height: 30%;
+    height: unset;
     background-color: rgb(204, 235, 255);
     border-top-left-radius: 1.5em;
     border-top-right-radius: 1.5em;
